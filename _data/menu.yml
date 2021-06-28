@@ -1,0 +1,11 @@
+entries:
+  - title: contact
+    entries:
+      - title: email
+        url: mailto:t.schultz@ufl.edu
+      - title: github
+        url: http://github.com/tj-schultz/
+        
+
+  - title: dev
+    post_list: true
