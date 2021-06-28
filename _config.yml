@@ -29,7 +29,7 @@ twitter_username: ""
 github_username:  "tj-schultz"
 
 # Build settings
-theme: no-style-please
+theme: minima
 plugins:
   - jekyll-feed
 
