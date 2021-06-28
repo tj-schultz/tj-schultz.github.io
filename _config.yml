@@ -29,7 +29,8 @@ twitter_username: ""
 github_username:  "tj-schultz"
 
 # Build settings
-theme: no-style-please
+# theme: minima
+remote_theme: riggraz/no-style-please
 plugins:
   - jekyll-feed
 
