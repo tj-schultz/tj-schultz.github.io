@@ -47,3 +47,5 @@ a { color: #005AFF; }
 a:visited { color: orange; }
 
 div { border-bottom: 10px double #005AFF; border-top: 10px double #005AFF; border-right: 10px solid #005AFF; border-left: 10px solid #005AFF; border-left: 10px solid #005AFF; }
+
+code { text-overflow: clip; white-space: pre-wrap; border: 3px solid black; }
