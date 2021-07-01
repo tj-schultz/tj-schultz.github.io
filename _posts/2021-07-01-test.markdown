@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "test"
+date:   2021-07-01 17:06:53 -0400
+categories: update
+---
+`TEST BEGIN`
+
+python snippet:
+
+{% highlight python %}
+## reads a qr code in the image, returns a string of the data
+def readQR(img):
+    
+    try:
+        ## decode the data using pyzbar decode
+        qr_data = decodeQR(img)[0][0]
+
+        ## truncate the non-data
+        if (len(qr_data) > 3):
+            qr_data = qr_data[:-2].decode() ## unfortunate double use of name
+
+        ## print the data if found, return without beginning and end
+        if qr_data is not None and len(qr_data) != 0:
+            print('QR code read as: \'%s\'\n' % qr_data)
+            return qr_data
+
+    except:
+        print('No QR code detected.\n')
+        return None
+{% endhighlight %}
+
+Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
