@@ -1,6 +1,8 @@
 entries:
   - title: contact
     entries:
+      - title: about
+        url: /about
       - title: email
         url: mailto:t.schultz@ufl.edu
       - title: github
