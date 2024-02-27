@@ -1,3 +1,4 @@
+
 # The Site Configuration
 
 # Import the theme
@@ -28,8 +29,8 @@ url: "https://tj-schultz.github.io"
 github:
   username: tj-schultz # change to your github username
 
-twitter:
-  username:  # change to your twitter username
+#twitter:
+ # username:  # change to your twitter username
 
 social:
   # Change to your full name.
