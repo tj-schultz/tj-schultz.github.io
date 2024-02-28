@@ -100,6 +100,10 @@
   --timeline-color: rgb(63, 65, 68);
   --timeline-year-dot-color: var(--timeline-color);
 
+  /* Avatar Filter */
+  --avatar-filter-hue-deg: hue-rotate(0);
+  --avatar-filter-brightness: brightness(1);
+
   .light {
     display: none;
   }

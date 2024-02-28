@@ -109,4 +109,8 @@
   --timeline-color: rgba(0, 0, 0, 0.075);
   --timeline-node-bg: #c2c6cc;
   --timeline-year-dot-color: #ffffff;
+
+  /* Avatar Filter */
+  --avatar-filter-hue-deg: hue-rotate(140deg);
+  --avatar-filter-brightness: brightness(1.5);
 } /* light-scheme */

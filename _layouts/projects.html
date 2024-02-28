@@ -1,0 +1,60 @@
+---
+layout: page
+# List projects entries
+---
+
+<div id="post-list">
+  {% for project in site.data.projects %}
+  <article class="card-wrapper">
+    <a href="{{ project.link }}" class="card post-preview flex-md-row-reverse" target="_blank" rel="noopener">
+      <div class="card-body d-flex flex-column">
+        <h1 class="card-title my-2 mt-md-0">
+          {% if project.icon %}
+          <div class="project-icon">
+            <img src="{{ project.icon }}" alt="" />
+          </div>
+          {% endif %}
+          <div class="project-title">
+            {{ project.title }}
+          </div>
+        </h1>
+        <div class="card-text content mt-0 mb-2">
+          <p>
+            {{ project.description }}
+          </p>
+        </div>
+        <div class="post-meta flex-grow-1 d-flex align-items-end project-a">
+          {{ project.link }}
+        </div>
+      </div>
+    </a>
+  </article>
+  {% endfor %}
+  <h1>Contributing Projects</h1>
+  {% for contrib in site.data.contributions %}
+  <article class="card-wrapper">
+    <a href="{{ contrib.link }}" class="card post-preview flex-md-row-reverse" target="_blank" rel="noopener">
+      <div class="card-body d-flex flex-column">
+        <h1 class="card-title my-2 mt-md-0">
+          {% if contrib.icon %}
+          <div class="project-icon">
+            <img src="{{ contrib.icon }}" alt="" />
+          </div>
+          {% endif %}
+          <div class="project-title">
+            {{ contrib.title }}
+          </div>
+        </h1>
+        <div class="card-text content mt-0 mb-2">
+          <p>
+            {{ contrib.description }}
+          </p>
+        </div>
+        <div class="post-meta flex-grow-1 d-flex align-items-end project-a">
+          {{ contrib.link }}
+        </div>
+      </div>
+    </a>
+  </article>
+  {% endfor %}
+</div>

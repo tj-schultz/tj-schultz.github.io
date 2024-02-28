@@ -1,0 +1,7 @@
+-
+  link: https://github.com/SFP-team/berrycv-workflow
+  title: BerryCV
+  description: >-
+    This repository contains a plantcv workflow tool
+    for performing automatic image-based phenotyping on blueberry samples. 
+

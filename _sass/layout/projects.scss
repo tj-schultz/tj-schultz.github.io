@@ -1,0 +1,25 @@
+.project-icon {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 0.5rem;
+
+  img {
+      display: block;
+      width: 3em;
+      height: 3em;
+  }
+}
+
+.project-title {
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+div.project-a {
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
