@@ -1,0 +1,70 @@
+---
+---
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* dark mode */
+html:not([data-mode]),
+html[data-mode='dark'] {
+    --avatar-filter-hue-deg: hue-rotate(0);
+    --avatar-filter-brightness: brightness(1);
+}
+
+/* light mode */
+html[data-mode='light'] {
+    --avatar-filter-hue-deg: hue-rotate(140deg);
+    --avatar-filter-brightness: brightness(1.5);
+}
+
+/* avatar flter */
+#avatar {
+
+    img {
+        filter: var(--avatar-filter-brightness) var(--avatar-filter-hue-deg);
+    }
+}
+
+/* projects page */
+.project-preview {
+    display: flex;
+    align-items: center;
+}
+
+.project-icon-wrapper {
+  aspect-ratio: 1 / 1;
+  min-height: 8rem;
+  min-width: 8rem;
+  max-height: 8rem;
+  max-width: 8rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+}
+
+.project-icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+div.project-a {
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
